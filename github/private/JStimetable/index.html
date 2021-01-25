@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/34ab07c471.js" crossorigin="anonymous"></script>
+  <title>JS-Timetable</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="kamoku-wrap">
+    <select id="selectTime">
+      <option>時限を選択</option>
+      <option>1時限目</option>
+      <option>2時限目</option>
+      <option>3時限目</option>
+      <option>4時限目</option>
+      <option>5時限目</option>
+      <option>6時限目</option>
+      <option>7時限目</option>
+    </select>
+    <select id="selectDay">
+      <option>曜日を選択</option>
+      <option>月曜日</option>
+      <option>火曜日</option>
+      <option>水曜日</option>
+      <option>木曜日</option>
+      <option>金曜日</option>
+    </select>
+    <div class="kamoku">
+      <input type="text" id="kamoku" value="科目名を入力">
+      <div class="Change_button" type="button" id="addSub">科目の追加</div>
+    </div>
+  </div>
+
+  <div class="jigen-wrap">
+      <select id="changeTime">
+        <option>時限数を選択</option>
+        <option>1時限</option>
+        <option>2時限</option>
+        <option>3時限</option>
+        <option>4時限</option>
+        <option>5時限</option>
+        <option>6時限</option>
+        <option>7時限</option>
+      </select>
+      <div class="Change_button" type="button" id="addRow">時限数の変更</div>
+  </div>
+
+  <table>
+    <thead>
+      <tr><th colspan="6">時間割</th></tr>
+      <tr>
+        <th>　</th>
+        <th>月</th>
+        <th>火</th>
+        <th>水</th>
+        <th>木</th>
+        <th>金</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="Period1">
+        <td>1</td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <tr class="Period2">
+        <td>2</td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <tr class="Period3">
+        <td>3</td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <tr class="Period4">
+        <td>4</td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <tr class="Period5">
+        <td>5</td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <tr class="Period6">
+        <td>6</td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+      <tr class="Period7">
+        <td>7</td><td></td><td></td><td></td><td></td><td></td>
+      </tr>
+    </tbody>
+  </table>
+  <footer>
+    <p>
+      制作者：みずの<div class="sns-logo"><a href="https://twitter.com/kuh1_m"><i class="fab fa-twitter"></i></a></div>
+    </p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
