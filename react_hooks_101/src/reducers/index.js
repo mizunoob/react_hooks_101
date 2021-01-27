@@ -37,4 +37,4 @@ const events = (state = [], action) => {
   }
 }
 
-export dafault events
+export default events
